@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "score", style: .plain, target: self, action: #selector(showScore))
         //我们可以通过将按钮的图层设置为 1 来解决这个问题，这样按钮周围就会画一条单点黑线.我们的边框在非视网膜设备上是 1 像素，在视网膜设备上是 2 像素，在视网膜高清设备上是 3 像素。由于自动将点乘以像素，这个边框在所有设备上的视觉厚度看起来都差不多。
         button1.layer.borderWidth = 1
         button2.layer.borderWidth = 1
@@ -79,6 +79,12 @@ class ViewController: UIViewController {
             })
             present(ac,animated: true)
         }
+    }
+    
+    @objc func showScore(){
+        let alertController = UIAlertController(title: "你的分数", message: "你的分数是\(score)", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "确定", style: .default))
+        present(alertController,animated: true)
     }
 }
 
