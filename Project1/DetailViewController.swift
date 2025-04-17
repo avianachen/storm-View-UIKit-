@@ -17,6 +17,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "第\(selectedPictureNumber)张图片，共\(totalPictures)张图片"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
         //希望第一个页面的标题大一点，但详细屏幕看起来正常
         navigationItem.largeTitleDisplayMode = .never
         if let imageToLoad = selectedImage{
@@ -35,7 +36,17 @@ class DetailViewController: UIViewController {
         navigationController?.hidesBarsOnTap = false
     }
     
-
+    @objc func shareTapped(){
+        guard let image = imageView.image?.jpegData(compressionQuality: 0.8) else{
+            print("No image found")
+            return
+        }
+        
+        let vc = UIActivityViewController(activityItems: [image,selectedImage ?? "无名字"] as [Any], applicationActivities: [])
+        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(vc,animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
