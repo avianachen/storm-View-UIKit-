@@ -44,18 +44,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ew9-ae-pNs" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="56:213" id="412-GS-jLc"/>
                             <constraint firstItem="Ew9-ae-pNs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7QU-0D-5NV"/>
                             <constraint firstItem="yGb-8g-2Nn" firstAttribute="top" secondItem="Ew9-ae-pNs" secondAttribute="bottom" constant="27" id="8px-Jr-dy2"/>
-                            <constraint firstItem="yGb-8g-2Nn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="56:213" id="FUU-bM-bsf"/>
-                            <constraint firstItem="yGb-8g-2Nn" firstAttribute="height" secondItem="Ew9-ae-pNs" secondAttribute="height" id="J9r-Wu-o5Y"/>
-                            <constraint firstItem="R01-3i-tFJ" firstAttribute="height" secondItem="yGb-8g-2Nn" secondAttribute="height" id="KLg-2K-qoF"/>
                             <constraint firstItem="yGb-8g-2Nn" firstAttribute="centerX" secondItem="Ew9-ae-pNs" secondAttribute="centerX" id="XR9-99-YSv"/>
                             <constraint firstItem="Ew9-ae-pNs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="c77-0g-kdQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="R01-3i-tFJ" secondAttribute="bottom" constant="20" id="cfL-a3-43H"/>
                             <constraint firstItem="R01-3i-tFJ" firstAttribute="top" secondItem="yGb-8g-2Nn" secondAttribute="bottom" constant="30" id="e8r-pP-5TA"/>
                             <constraint firstItem="R01-3i-tFJ" firstAttribute="centerX" secondItem="yGb-8g-2Nn" secondAttribute="centerX" id="eyg-qY-fx8"/>
-                            <constraint firstItem="R01-3i-tFJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="56:213" id="og3-v4-OmJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9k4-u3-w1y"/>
